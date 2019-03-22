@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Score</title>
+<script>
+function myFunction() {
+  var greeting;
+  var score = parseFloat(document.getElementById("first").value);
+  if (score >= 60) {
+    greeting = "Very Good~";
+  } else if (score < 60) {
+    greeting = "Very Bad!";
+  } else {
+    greeting = "Error";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+</head>
+<body>
+
+<p>請輸入成績：</p>
+<input type="text" id="first" />
+<br>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+</body>
+</html>
